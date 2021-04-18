@@ -1,0 +1,33 @@
+GET https://jsonplaceholder.typicode.com/todos?userId=1
+
+<> 2021-04-18T112529.200.json
+<> 2021-04-18T111601.200.json
+
+###
+POST https://jsonplaceholder.typicode.com/todos
+Content-Type: application/json
+
+{
+  "userId": 1,
+  "title": "A New Task",
+  "completed": false
+}
+
+<> 2021-04-18T112005.201.json
+###
+PUT https://jsonplaceholder.typicode.com/todos/1
+Content-Type: application/json
+
+{
+  "userId": 1,
+  "title": "A New Task",
+  "completed": true
+}
+
+<> 2021-04-18T112345.200.json
+<> 2021-04-18T112256.500.html
+<> 2021-04-18T112231.404.json
+###
+DELETE https://jsonplaceholder.typicode.com/todos/1
+
+<> 2021-04-18T112706.200.json
